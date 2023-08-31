@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary-color: #61DAFB;
+  --secondary-color: #282C34;
+  --background-color: #F3F4F6;
+  --text-color: #333333;
+  --accent-color: #AEEFFC;
+}
+
+.box {
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--background-color);
+}
+
+.box--primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.box--secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.navbar {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #282C34;
+}
+
+.navbar a::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid var(--primary-color);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+.container {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+}
+
+.text-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.content-container {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--background-color);
+  border-radius: 4px;
+}
+
+.list-item {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.list-item li {
+  margin: 8px 0;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: var(--text-color);
+  text-align: center;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1.5em;
+  border-left: 4px solid var(--primary-color);
+  color: var(--text-color);
+  font-style: italic;
+}
+
+pre {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+ul,
+ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+code {
+  background-color: var(--background-color);
+  padding: 2px 4px;
+  font-size: 90%;
+  border-radius: 3px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--secondary-color);
+  margin: 1em 0;
+}
