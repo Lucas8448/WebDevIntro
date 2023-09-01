@@ -11,7 +11,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
 }
 
 code {
@@ -49,17 +52,33 @@ code {
   color: white;
 }
 
+.subsection {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: var(--background-color);
+}
+
+.content-container {
+  padding: 1.5rem;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
 .container {
   margin: auto;
   max-width: 800px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
 
-.content-container {
-  padding: 1.5rem;
-}
 
 .navbar {
   background-color: var(--secondary-color);
