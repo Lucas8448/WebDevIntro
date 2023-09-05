@@ -154,13 +154,17 @@ code {
   border-radius: 4px;
 }
 
-.list-item {
-  list-style-type: disc;
-  margin-left: 20px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.list-item li {
-  margin: 8px 0;
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
 }
 
 .footer {
@@ -233,6 +237,8 @@ ul,
 ol {
   margin-bottom: 1em;
   padding-left: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 code {
